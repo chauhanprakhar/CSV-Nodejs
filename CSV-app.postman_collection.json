@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "d3c8cd20-7e7e-4e14-b837-fbe493748375",
+		"name": "CSV-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmFlYTQ5ODk2YzIzM2EyODFiODUyOSIsImlhdCI6MTYyNzA2ODM3MywiZXhwIjoxNjI3MDgyNzczfQ.FkWCBoPKOtoXDJrKx9H82zDYwuONEiogt-qP1tT3k2A",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Prakhar\",\r\n    \"lastname\":\"Chauhan\",\r\n    \"city\":\"Delhi\",\r\n    \"salary\":\"78192\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmFlYTQ5ODk2YzIzM2EyODFiODUyOSIsImlhdCI6MTYyNzA2ODM3MywiZXhwIjoxNjI3MDgyNzczfQ.FkWCBoPKOtoXDJrKx9H82zDYwuONEiogt-qP1tT3k2A",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmFlYTQ5ODk2YzIzM2EyODFiODUyOSIsImlhdCI6MTYyNzA2ODM3MywiZXhwIjoxNjI3MDgyNzczfQ.FkWCBoPKOtoXDJrKx9H82zDYwuONEiogt-qP1tT3k2A",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prakhar\",\r\n    \"city\":\"Delhi\",\r\n    \"salary\":\"78192\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZmFlYTQ5ODk2YzIzM2EyODFiODUyOSIsImlhdCI6MTYyNzA2ODM3MywiZXhwIjoxNjI3MDgyNzczfQ.FkWCBoPKOtoXDJrKx9H82zDYwuONEiogt-qP1tT3k2A",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prakhar\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
